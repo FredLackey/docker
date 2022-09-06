@@ -6,9 +6,9 @@ main () {
   local SCRIPTS_PATH=$(dirname $SCRIPT_PATH)
   local ROOT_PATH=$(dirname $SCRIPTS_PATH)
 
-  echo "SCRIPT_PATH  $SCRIPT_PATH"
-  echo "SCRIPTS_PATH $SCRIPTS_PATH"
-  echo "ROOT_PATH    $ROOT_PATH"
+  # echo "SCRIPT_PATH  $SCRIPT_PATH"
+  # echo "SCRIPTS_PATH $SCRIPTS_PATH"
+  # echo "ROOT_PATH    $ROOT_PATH"
 
   echo " "
   echo "Hope you've logged in to Iron Bank already.  This won't go well without it..."
