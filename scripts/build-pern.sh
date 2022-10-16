@@ -15,6 +15,7 @@ main () {
   echo " "
 
   local PROJECTS=(
+    "mailslurper"
     "postgres"
     "pgadmin"
 
