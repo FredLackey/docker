@@ -23,6 +23,8 @@ main () {
     "redis-commander"
 
     "node"
+
+    "n8n"
   )
 
   for PROJECT in ${PROJECTS[@]}; do

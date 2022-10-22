@@ -15,17 +15,23 @@ main () {
   echo " "
 
   local PROJECTS=(
+    # "apache"
+    "keycloak"
+    "mailslurper"
     "mariadb"
     "mysql"
+    "n8n"
+    "nginx"
+    "node"
     "pgadmin"
     "phpmyadmin"
     "postgres"
     "redis"
     "redis-commander"
-
     "ubuntu"
-    "apache"
     "wordpress"
+
+    "apache"
   )
 
   for PROJECT in ${PROJECTS[@]}; do
