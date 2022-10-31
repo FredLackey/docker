@@ -25,6 +25,7 @@ main () {
     "node"
 
     "n8n"
+    "restuils"
   )
 
   for PROJECT in ${PROJECTS[@]}; do

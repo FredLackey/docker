@@ -28,6 +28,7 @@ main () {
     "postgres"
     "redis"
     "redis-commander"
+    "restuils"
     "ubuntu"
     "wordpress"
 
