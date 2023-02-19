@@ -31,10 +31,11 @@ main () {
     "redis"
     "redis-commander"
     "restutils"
-    "ubuntu"
-    "wordpress"
 
+    "ubuntu"
     "apache"
+
+    "wordpress"
   )
 
   for PROJECT in ${PROJECTS[@]}; do
