@@ -1,4 +1,4 @@
-FROM n8nio/n8n:0.215.2-debian
+FROM n8nio/n8n:0.215.2
 # FROM registry1.dso.mil/ironbank/opensource/nodejs/nodejs16:16.17.0
 LABEL maintainer="Fred Lackey <fred.lackey@gmail.com>"
 
