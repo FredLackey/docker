@@ -1,0 +1,19 @@
+services:
+
+  # mariadb:
+  #   image: fredlackey/mariadb:10
+  #   environment:
+  #     - MARIADB_ROOT_PASSWORD=Pass1234
+
+  moodle:
+    image: fredlackey/moodle:3.5
+    ports:
+      - 80:80
+    volumes:
+      - ./moodledata:/var/www/moodledata
+    networks:
+      - moodle
+
+networks:
+  moodle:
+    driver: bridge

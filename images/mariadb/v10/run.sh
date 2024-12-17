@@ -1,0 +1,9 @@
+#!/bin/bash
+
+docker run \
+  -p 3306:3306 \
+  --name mariadb \
+  -e MARIADB_ROOT_PASSWORD=Pass1234 \
+  fredlackey/mariadb:10
+
+# MARIADB_ROOT_PASSWORD, MARIADB_ROOT_PASSWORD_HASH, MARIADB_ALLOW_EMPTY_ROOT_PASSWORD and MARIADB_RANDOM_ROOT_PASSWORD
