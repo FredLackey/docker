@@ -1,10 +1,8 @@
 services:
 
   mongo:
-    build:
-      context: ./images/mongo/v6
-      dockerfile: Dockerfile
-    container_name: mongo
+    image: fredlackey/mongo:6
+    container_name: dev-mongo
     restart: unless-stopped
     environment:
       MONGO_INITDB_ROOT_USERNAME: root
@@ -14,9 +12,9 @@ services:
     ports:
       - 27017:27017
 
-  mongo-express:
-    container_name: mongo-ui
-    image: mongo-express
+  mongo-ui:
+    image: fredlackey/mongo-ui:latest
+    container_name: dev-mongo-ui
     restart: unless-stopped
     depends_on:
       - mongo
@@ -29,10 +27,8 @@ services:
       ME_CONFIG_BASICAUTH: false
 
   redis:
-    build:
-      context: ./images/redis
-      dockerfile: Dockerfile
-    container_name: redis
+    container_name: dev-redis
+    image: fredlackey/redis:7
     ports:
       - 6379:6379
     volumes:
