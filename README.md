@@ -6,6 +6,38 @@ Docker base images for personal projects
 
 Long story short, I grew tired of hunting down version numbers, remediating CVEs over and over, and recreating image layers.  Figured I'd create a repo to grow a collection of Dockerfiles as I use them.  No idea what will ever happen to this repo.
 
+## Important Note
+
+Please be aware that the Docker images and configurations in this repository are intended for local development and educational purposes only. They are provided as a starting point to help you learn and experiment with these technologies. These examples are not hardened for production use and should not be deployed in a live environment without a thorough security review and appropriate modifications.
+
+## Available Images
+
+Here is a list of the images available in this repository:
+
+*   **apache**: A classic HTTP server.
+*   **cassandra-db**: A high-performance, distributed NoSQL database.
+*   **keycloak**: An open-source identity and access management solution.
+*   **mailslurper**: A handy SMTP mail server for development that captures all outgoing email.
+*   **mariadb**: A popular open-source relational database, forked from MySQL.
+*   **mongo**: A leading NoSQL, document-oriented database.
+*   **mongo-express**: A web-based admin interface for MongoDB.
+*   **moodle**: A widely-used open-source learning platform.
+*   **mysql**: The world's most popular open-source relational database.
+*   **n8n**: A free and open-source workflow automation tool.
+*   **nginx**: A high-performance web server, reverse proxy, and load balancer.
+*   **node**: A JavaScript runtime built on Chrome's V8 JavaScript engine.
+*   **node-red**: A flow-based development tool for visual programming.
+*   **pgadmin**: A feature-rich administration and development platform for PostgreSQL.
+*   **phpmyadmin**: A web-based administration tool for MySQL and MariaDB.
+*   **portainer**: A lightweight management UI for Docker environments.
+*   **postgres**: A powerful, open-source object-relational database system.
+*   **redis**: An in-memory data structure store, used as a database, cache, and message broker.
+*   **redis-commander**: A web-based user interface to manage Redis databases.
+*   **restutils**: A simple, useful utility for testing REST APIs.
+*   **ubuntu**: A popular Linux distribution, providing base images for various versions.
+*   **ubuntu-dev**: A customized Ubuntu image with common development tools pre-installed.
+*   **wordpress**: A free and open-source content management system.
+
 ## Ironbank
 
 ### About Platform One : [https://software.af.mil/dsop/services/](https://software.af.mil/dsop/services/)

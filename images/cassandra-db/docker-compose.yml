@@ -1,0 +1,30 @@
+services:
+  cassandra-db:
+    image: cassandra:latest
+    container_name: cassandra-db
+    ports:
+      - "9042:9042"
+    volumes:
+      - ./init-scripts:/init-scripts
+      - cassandra-db:/var/lib/cassandra
+    command: >
+      /bin/bash -c "
+        /usr/local/bin/docker-entrypoint.sh cassandra -f &
+        pid=$$!
+        echo 'Waiting for Cassandra to start...'
+        while ! cqlsh -e 'describe keyspaces' > /dev/null 2>&1; do
+          sleep 5
+        done
+        echo 'Cassandra started, running init script.'
+        cqlsh -f /init-scripts/init.cql
+        echo 'Init script complete.'
+        wait $$pid
+      "
+
+volumes:
+  cassandra-db:
+    driver: local
+
+networks:
+  default:
+    driver: bridge 
