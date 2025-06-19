@@ -18,7 +18,7 @@ This is the most straightforward but least secure configuration.
 -   **Use Case**: Ideal for initial development or scenarios where the database is in a completely isolated and trusted network, and ease of access is prioritized over security.
 
 ### 2. `password-security`
-
+h
 This configuration introduces a basic layer of security by requiring a password for the primary superuser.
 
 -   **Authentication**: Enabled using `PasswordAuthenticator`.
